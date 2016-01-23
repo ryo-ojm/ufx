@@ -24,7 +24,7 @@ var gulp = require( 'gulp' ),
 		srcDir : 'src/img',
 		dstDir : 'dist/img',
 		serverDir : 'localhost'
-	}
+	};
 
 /*
  * Sass
