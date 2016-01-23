@@ -1,0 +1,72 @@
+@charset "utf-8";
+// ===================================================================
+// メイン - このファイルにメインコンテンツ部分のスタイルをガツガツ書いていく。
+// ===================================================================
+
+/*----------------------------------------------------
+	element style
+----------------------------------------------------*/
+body {
+	background: $main_color;
+	color: $font_color;
+	font-family: $base_font;
+	overflow:hidden;
+}
+
+input, textarea {
+	font-family: $base_font;
+}
+
+// for IE6
+* html {
+	body, input, textarea {
+		font-family: $base_font_ie;
+	}
+}
+
+// 外部リンクアイコン
+.externalIcon {
+	margin: 0 3px;
+	vertical-align: middle;
+}
+
+// リンク
+a {
+	&:link {
+		color: $link_color;
+	}
+	&:visited {
+		color: $link_color_visited;
+	}
+	&:hover {
+		text-decoration: none;
+		color: $link_color_hover;
+	}
+	&:active {
+		color: $link_color_active;
+	}
+}
+
+
+// レイアウト関係のスタイル読み込み
+@import "layout";
+
+
+/*----------------------------------------------------
+	#main
+----------------------------------------------------*/
+#main {
+	width: 1200px;
+	background: $main_color;
+	margin : auto;
+	//@include border_radius;
+
+	table, ol, ul, dl, blockquote, pre, p {
+		margin-bottom: $base_margin_bottom;
+	}
+
+}
+
+
+
+
